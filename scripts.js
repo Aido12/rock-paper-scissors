@@ -6,7 +6,7 @@ options.forEach((option) => {
   option.addEventListener('click', function () {
     const playerSelection = this.value;
 
-    const computerOptions = ['Rock', 'Paper', 'Scissors'];
+    const computerOptions = ['rock', 'paper', 'scissors'];
     const computerSelection = computerOptions[Math.floor(Math.random() * 3)];
 
     updateMoves(playerSelection, computerSelection);
@@ -42,7 +42,6 @@ function playRound(playerSelection, computerSelection) {
       'result',
     ).innerHTML = `You lose ${computerSelection} beats ${playerSelection}`;
   }
-  console.log(playerScore);
 }
 
 function updateScore() {
