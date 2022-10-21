@@ -6,7 +6,7 @@ options.forEach((option) => {
   option.addEventListener('click', function () {
     const playerSelection = this.value;
 
-    const computerOptions = ['Rock', 'Paper', 'Scissors'];
+    const computerOptions = ['rock', 'paper', 'scissors'];
     const computerSelection = computerOptions[Math.floor(Math.random() * 3)];
 
     updateMoves(playerSelection, computerSelection);
@@ -28,9 +28,9 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
     document.getElementById('result').innerHTML = 'Its a Tie!';
   } else if (
-    (playerSelection == 'Rock' && computerSelection == 'Scissors') ||
-    (playerSelection == 'Scissors' && computerSelection == 'Paper') ||
-    (playerSelection == 'Paper' && computerSelection == 'Rock')
+    (playerSelection == 'rock' && computerSelection == 'scissors') ||
+    (playerSelection == 'scissors' && computerSelection == 'paper') ||
+    (playerSelection == 'paper' && computerSelection == 'rock')
   ) {
     playerScore++;
     document.getElementById(
