@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+.score {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
 .display {
   display: flex;
   text-align: center;
