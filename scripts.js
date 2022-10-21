@@ -26,7 +26,7 @@ function updateMoves(playerSelection, computerSelection) {
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
-    document.getElementById('result').innerHTML = 'Its a Tie';
+    document.getElementById('result').innerHTML = 'Its a Tie!';
   } else if (
     (playerSelection == 'rock' && computerSelection == 'scissors') ||
     (playerSelection == 'scissors' && computerSelection == 'paper') ||
@@ -35,12 +35,12 @@ function playRound(playerSelection, computerSelection) {
     playerScore++;
     document.getElementById(
       'result',
-    ).innerHTML = `You win ${playerSelection} beats ${computerSelection}`;
+    ).innerHTML = `You Win! ${playerSelection} beats ${computerSelection}`;
   } else {
     computerScore++;
     document.getElementById(
       'result',
-    ).innerHTML = `You lose ${computerSelection} beats ${playerSelection}`;
+    ).innerHTML = `You Lose! ${computerSelection} beats ${playerSelection}`;
   }
 }
 
